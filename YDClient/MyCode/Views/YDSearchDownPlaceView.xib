@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="6bg-fF-DXa" customClass="YDSearchDownPlaceView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="l6d-Fe-4du">
+                    <rect key="frame" x="8" y="71" width="359" height="596"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="l6d-Fe-4du" firstAttribute="top" secondItem="nRr-rP-pd0" secondAttribute="top" constant="51" id="VZF-N0-aR7"/>
+                <constraint firstItem="nRr-rP-pd0" firstAttribute="bottom" secondItem="l6d-Fe-4du" secondAttribute="bottom" id="fqT-PT-iX4"/>
+                <constraint firstItem="nRr-rP-pd0" firstAttribute="trailing" secondItem="l6d-Fe-4du" secondAttribute="trailing" constant="8" id="xwI-sU-qHs"/>
+                <constraint firstItem="l6d-Fe-4du" firstAttribute="leading" secondItem="nRr-rP-pd0" secondAttribute="leading" constant="8" id="y0Z-kz-LBY"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="nRr-rP-pd0"/>
+            <connections>
+                <outlet property="tableView" destination="l6d-Fe-4du" id="GlH-ug-LzY"/>
+            </connections>
+        </view>
+    </objects>
+</document>

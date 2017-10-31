@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="hHv-dq-8ZK" customClass="YDPersonCenterHeaderView">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="280"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="caf-qg-7jj">
+                    <rect key="frame" x="157.5" y="70" width="60" height="60"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="60" id="S3r-Ny-QBv"/>
+                        <constraint firstAttribute="width" constant="60" id="ijU-US-rqX"/>
+                    </constraints>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="30"/>
+                        <userDefinedRuntimeAttribute type="boolean" keyPath="layer.masksToBounds" value="YES"/>
+                        <userDefinedRuntimeAttribute type="string" keyPath="layer.borderWidth" value="2"/>
+                        <userDefinedRuntimeAttribute type="color" keyPath="layer.borderColorWithUIColor">
+                            <color key="value" red="0.82352941176470584" green="0.82352941176470584" blue="0.82352941176470584" alpha="1" colorSpace="calibratedRGB"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </imageView>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="11111" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jbE-K5-t52">
+                    <rect key="frame" x="0.0" y="134" width="375" height="23"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="23" id="nla-x0-Zdc"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstItem="jbE-K5-t52" firstAttribute="leading" secondItem="hHv-dq-8ZK" secondAttribute="leading" id="T3f-Sb-k8J"/>
+                <constraint firstItem="caf-qg-7jj" firstAttribute="centerX" secondItem="hHv-dq-8ZK" secondAttribute="centerX" id="ZE9-i7-xZ3"/>
+                <constraint firstItem="jbE-K5-t52" firstAttribute="top" secondItem="caf-qg-7jj" secondAttribute="bottom" constant="4" id="cts-hr-XvY"/>
+                <constraint firstAttribute="trailing" secondItem="jbE-K5-t52" secondAttribute="trailing" id="m6D-jr-03G"/>
+                <constraint firstItem="caf-qg-7jj" firstAttribute="top" secondItem="hHv-dq-8ZK" secondAttribute="top" constant="70" id="pnT-ek-5hv"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="headerImage" destination="caf-qg-7jj" id="Ody-7N-9yg"/>
+                <outlet property="nameLabel" destination="jbE-K5-t52" id="wgf-dh-ESU"/>
+            </connections>
+            <point key="canvasLocation" x="7.5" y="-1"/>
+        </view>
+    </objects>
+</document>
